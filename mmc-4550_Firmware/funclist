@@ -1,0 +1,17 @@
+_send_chara: CODE, 3836 0 152
+_init_pic: CODE, 4256 0 48
+_spi_delay: CODE, 4070 0 80
+_lcd_init: CODE, 3500 0 170
+_clear_all: CODE, 4348 0 38
+_spi_sendbyte: CODE, 4386 0 34
+_main: CODE, 1048 0 1276
+_init_mmc: CODE, 3670 0 166
+_check_return: CODE, 4206 0 50
+_set_arg: CODE, 4420 0 18
+_lcd_command: CODE, 4150 0 56
+_send_command: CODE, 2324 0 494
+_lcd_data: CODE, 3988 0 82
+_name_print: CODE, 3262 0 238
+_read_file: CODE, 2818 0 444
+_byte_recieve: CODE, 4304 0 44
+Total: 3390
