@@ -2,7 +2,7 @@
 #include <htc.h>
 #include "functions.h"
 
-
+/* PIC configuration words */
 __CONFIG(1,UNPROTECT);
 __CONFIG(2, VREGEN & PWRTDIS & BOREN & BORV20 & WDTDIS & WDTPS32K);
 __CONFIG(3, PBDIGITAL & LPT1DIS & MCLREN);
@@ -10,6 +10,8 @@ __CONFIG(4, XINSTDIS & STVREN & LVPDIS & ICPORTDIS & DEBUGDIS);
 __CONFIG(5, UNPROTECT);
 __CONFIG(6, UNPROTECT);
 __CONFIG(7, UNPROTECT);
+
+/* Declarations */
 volatile unsigned char sd_buffer[512];
 volatile unsigned char temp1;
 
@@ -44,7 +46,7 @@ void main()
 	unsigned char address[4];
 	while(w!=0xFE)
 	{
-	w=byte_recieve();
+	   w=byte_recieve();
 	}
 
 	for(unsigned char i=4;i>0;i--)
